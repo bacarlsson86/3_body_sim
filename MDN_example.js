@@ -1,6 +1,6 @@
 // example where elements immediately jump to a new location
 
-function MDN_Example{
+function MDN_Example(){
     let zero;
     requestAnimationFrame(firstFrame);
     function firstFrame(timeStamp) {

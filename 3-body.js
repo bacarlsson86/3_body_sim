@@ -175,19 +175,3 @@ run_sim(state);
 let point1_img = document.querySelector("point1");
 let point2_img = document.querySelector("point2");
 let point3_img = document.querySelector("point3");
-
-function MDN_Example{
-    let zero;
-    requestAnimationFrame(firstFrame);
-    function firstFrame(timeStamp) {
-    zero = timeStamp;
-    animate(timeStamp);
-    }
-    function animate(timeStamp) {
-    const value = (timeStamp - zero) / duration;
-    if (value < 1) {
-        element.style.opacity = value;
-        requestAnimationFrame((t) => animate(t));
-    } else element.style.opacity = 1;
-    }
-}
