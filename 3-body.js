@@ -1,4 +1,10 @@
-// translate your python code into js code!!!
+// A simple 3-body sim in JS
+
+// TODO: Animate results in an HTML canvas
+// TODO: Refactor all of the direct references to state elements
+// to loops
+// TODO: Create a randomizer for the points
+// TODO: Create input for user
 
 // create debug on / off switch
 
@@ -11,19 +17,6 @@ if(!DEBUG){
         console[methods[i]] = function(){}
     }
 }
-
-// rough outline
-// initialize simulation
-
-// start loop that ends when time = sim_length variable
-    // for every sim interval (time), run update_state on the current
-    // state array
-
-    // update view
-
-    // increment time variable
-
-// loop
 
 // set our simulation time interval
 const sim_interval = 1;
@@ -171,10 +164,6 @@ function run_sim(state){
         update_velocity(state[1]);
     }
     console.log("Simulation complete")
-    // loop over sim time
-        // update_position on each point
-        // update_acceleration on each point
-        // update_velocity on each point
 }
 
 console.table(state)
